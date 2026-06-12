@@ -94,15 +94,15 @@ function sendDateInvite(event) {
   const emojiCarinha = String.fromCodePoint(0x1f970);
 
   const message = [
-    `✨ *DATE MARCADO!* ✨`,
+    `|_ *DATE MARCADO!* _|`,
     "-----------------------------------------",
-    `🗓️ *Data:* ${date}`,
-    `⌚ *Hor\u00E1rio:* ${time}`,
-    `🌹 *Plano:* ${plan}`,
+    `||*Data:* ${date}`,
+    `|| *Hor\u00E1rio:* ${time}`,
+    `|| *Plano:* ${plan}`,
     "",
-    extra ? `💬 *Recadinho do Corac\u00E3o:* _"${extra}"_` : "",
+    extra ? `|| *Recadinho do Corac\u00E3o:* _"${extra}"_` : "",
     "-----------------------------------------",
-    `${emojiAlfinete} _Por favor, responda com um 'SIM' ou um emoji para confirmar a reserva do seu lugar na minha vida._ ${emojiCarinha}`,
+    `_Responda sabiamente o convite com um emoji.`,
   ]
     .filter(Boolean)
     .join("\n");
