@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Um site romântico com convite para date, história do casal e pedido de casamento."
+    />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+    <meta name="referrer" content="no-referrer" />
+    <title>Nosso Dia dos Namorados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Menu principal">
+      <a class="brand" href="#date" aria-label="Ir para o início">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>Nós Dois</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#date">Bora um Date</a>
+        <a href="#historia">Nossa História</a>
+        <a href="#pedido">Quer Casar Comigo?</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="date-section section-panel" id="date">
+        <div class="date-copy">
+          <p class="eyebrow">Dia dos Namorados</p>
+          <h1>Bora um date?</h1>
+          <p>Marque o date, Ohana SZ!</p>
+        </div>
+
+        <form class="date-form" id="dateForm">
+          <label>
+            <span>Data</span>
+            <input type="date" id="dateInput" required />
+          </label>
+
+          <label>
+            <span>Horário</span>
+            <input type="time" id="timeInput" required />
+          </label>
+
+          <label>
+            <span>Plano do date</span>
+            <select id="planInput" required>
+              <option value="jantar especial">Jantar especial</option>
+              <option value="cinema juntinhos">Cinema juntinhos</option>
+              <option value="passeio surpresa">Passeio surpresa</option>
+              <option value="noite de vinho e conversa">
+                Noite de vinho e conversa
+              </option>
+              <option value="aventura escolhida por nós">
+                Aventura escolhida por nós
+              </option>
+            </select>
+          </label>
+
+          <label class="full-field">
+            <span>Mensagem extra</span>
+            <textarea
+              id="messageInput"
+              rows="4"
+              placeholder="Ex.: Vai ter sobremesa, música e eu te esperando com saudade."
+            ></textarea>
+          </label>
+
+          <button class="primary-button" type="submit">Enviar convite</button>
+        </form>
+      </section>
+
+      <section class="story-section" id="historia">
+        <aside class="photo-rail" aria-label="Fotos do casal rolando">
+          <div class="photo-track" id="photoTrack"></div>
+        </aside>
+
+        <div class="poem-stage">
+          <p class="eyebrow">Nossa História</p>
+          <h2>Tudo começou em 2020, xuxu.</h2>
+          <article class="poem-card" aria-live="polite">
+            <p id="poemText"></p>
+          </article>
+          <div class="poem-dots" id="poemDots" aria-label="Poemas"></div>
+        </div>
+      </section>
+
+      <section class="proposal-section section-panel" id="pedido">
+        <div class="proposal-content">
+          <p class="eyebrow">Pergunta importante</p>
+          <h2>Quer casar comigo?</h2>
+          <div class="sticker-row" id="stickerRow" aria-hidden="true">
+            <span>♡</span>
+            <span>✦</span>
+            <span>♡</span>
+          </div>
+          <div class="proposal-actions" id="proposalActions">
+            <button class="yes-button" id="yesButton" type="button">Sim</button>
+            <button class="no-button" id="noButton" type="button">Não</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="volume-control" aria-label="Controle de volume da musica">
+      <button
+        class="volume-icon"
+        id="volumeIcon"
+        type="button"
+        aria-label="Ativar ou silenciar musica"
+      >
+        &#128266;
+      </button>
+      <input
+        class="volume-slider"
+        id="volumeSlider"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.45"
+        aria-label="Volume da musica"
+      />
+    </div>
+
+    <div class="popup-overlay" id="popupOverlay" aria-hidden="true">
+      <img
+        src="assets/fotos/foto_nao.jpg"
+        id="popupImage"
+        alt="Surpresa!"
+        onerror="this.src = 'assets/fotos/foto_1.jpg'"
+      />
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <audio
+      id="backgroundMusic"
+      src="assets/audio/you-and-i.mp3"
+      autoplay
+      loop
+      preload="auto"
+    ></audio>
+
+    <script src="script.js"></script>
+    <script
+      src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+assets/fotos/originais/
+assets/fotos/original/
+assets/fotos/*.heic
+assets/fotos/*.HEIC
+assets/fotos/*.raw
+assets/fotos/*.RAW
+assets/fotos/*.dng
+assets/fotos/*.DNG
+
