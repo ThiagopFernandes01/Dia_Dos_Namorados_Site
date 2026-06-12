@@ -3,7 +3,7 @@ const CONFIG = {
   // Nao e criptografia: em um site publico, tudo que aparece no navegador pode ser visto.
   // Exemplo para 5511999999999: ["55", "11", "99999", "9999"]
   whatsAppParts: {
-    yours: ["55", "31", "7145", "4673"],
+    yours: ["55", "15", " 99190", "7811"],
     partner: ["55", "31", "97183", "2034"],
   },
   photoPaths: [
