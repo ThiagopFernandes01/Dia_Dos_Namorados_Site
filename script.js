@@ -3,25 +3,23 @@ const CONFIG = {
   // Nao e criptografia: em um site publico, tudo que aparece no navegador pode ser visto.
   // Exemplo para 5511999999999: ["55", "11", "99999", "9999"]
   whatsAppParts: {
-    yours: ["55", "15", " 99190", "7811"],
-    partner: ["55", "31", "97183", "2034"],
+    yours: ["xx", "xx", "xxxxx", "xxxx"],
+    partner: ["xx", "xx", "xxxxx", "xxxx"],
   },
   photoPaths: [
-    "assets/fotos/foto_1.jpg",
-    "assets/fotos/foto_2.jpg",
-    "assets/fotos/foto_3.jpg",
-    "assets/fotos/foto_4.jpg",
-    "assets/fotos/foto_5.jpg",
-    "assets/fotos/foto_6.jpg",
-    "assets/fotos/foto_7.jpg",
-    "assets/fotos/foto_8.jpg",
-    "assets/fotos/foto_9.jpeg",
-    "assets/fotos/foto_10.jpeg",
+    "assets/fotos/foto_x.jpg",
+    "assets/fotos/foto_x.jpg",
+    "assets/fotos/foto_x.jpg",
+    "assets/fotos/foto_x.jpg",
+    "assets/fotos/foto_x.jpg",
+    "assets/fotos/foto_x.jpg",
+    "assets/fotos/foto_x.jpg",
+    "assets/fotos/foto_x.jpg",
+    "assets/fotos/foto_x.jpeg",
+    "assets/fotos/foto_x.jpeg",
   ],
-  musicPath: "assets/audio/you-and-i.mp3",
-  poems: [
-    "Lembranças do nosso primeiro ano juntos. Você conheceu sua sogra, que ama mais você que eu atualmente. Adotamos nossa filha. Fizemos máscara de barro pela primeira vez. Engordamos juntinhos. É isso. Te amor, minha ohana.",
-  ],
+  musicPath: "assets/audio/xxxxx.mp3",
+  poems: ["Texto aqui."],
 };
 
 const dateForm = document.querySelector("#dateForm");
@@ -165,7 +163,6 @@ function animatePhotoRail(timestamp) {
   const firstItem = photoTrack.firstElementChild;
 
   if (firstItem) {
-    // Calcula as dimensões de forma preguiçosa apenas uma vez (evita congelamento da aba)
     if (!cachedCycleSize) {
       const computedTrack = getComputedStyle(photoTrack);
       const gap = parseFloat(computedTrack.gap) || 0;
@@ -247,7 +244,7 @@ function celebrateYes() {
   stickerRow.innerHTML =
     "<span>\u2665</span><span>SIM!</span><span>\u2665</span>";
   burstHearts();
-  showToast("Eu sabia. Agora me dá um jogo. Te amo 💗");
+  showToast("Texto do sim do casamento aqui 💗");
 }
 
 function clamp(value, min, max) {
