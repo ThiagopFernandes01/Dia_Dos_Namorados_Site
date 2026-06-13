@@ -2,8 +2,6 @@
 
 Este é um projeto estático, pessoal e sem fins lucrativos, criado com muito carinho para uma ocasião especial: um convite inesquecível de Dia dos Namorados (com direito a retrospectiva e um pedido importante).
 
-> **Aviso Temporário de Privacidade:** > Este repositório contém dados pessoais reais (como fotos do casal na pasta `assets/fotos` e números de contato no `script.js`) de forma **estritamente temporária**. Essas informações serão mantidas no ar por apenas **por tempo limitado** para a realização da surpresa. Após esse período, todos os dados sensíveis e mídias pessoais serão removidos definitivamente.
-
 ---
 
 ## 🛠️ Personalização (Para quem quiser usar de inspiração)
